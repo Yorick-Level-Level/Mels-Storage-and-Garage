@@ -47,6 +47,7 @@ const config: Config = {
         coral: '#FF6B6B',
         lavender: '#C3B1E1',
         'muted-gold': '#E1B12C',
+        'muted-blue': '#E3ECF7',
       },
       transitionProperty: {
         width: 'width',

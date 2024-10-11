@@ -2,10 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 import header from '@/content/header.json';
 import { Button } from '@/components/atoms/Button/Component';
+import ImagePreview from '@/components/molecules/ImagePreview/Component';
 
 export default function Header(): JSX.Element {
   return (
-    <header className="text-white grid grid-cols-10 gap-4">
+    <header className="text-white grid grid-cols-10 relative">
       <div className="relative col-span-full">
         <Image
           className="absolute h-full w-screen left-1/2 -translate-x-1/2 overflow-hidden object-cover grayscale-[75%] contrast-125 saturate-200 bg-primary opacity-50"
@@ -30,6 +31,11 @@ export default function Header(): JSX.Element {
             </Button>
           </div>
         </div>
+      </div>
+      <div className="flex gap-6 col-span-full -translate-y-2 bg-muted-blue w-full py-4 px-8 rounded-lg">
+        <ImagePreview />
+        <ImagePreview />
+        <ImagePreview />
       </div>
     </header>
   );
